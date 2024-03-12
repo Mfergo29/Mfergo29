@@ -1,4 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matias Fernandez</title>
-    <body> Matias Fernandez </body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            color: #007bff;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .highlight-section {
+            background-color: #ffc107;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
 </head>
+<body>
+    <h1>Resume</h1>
+    
+    <h2>Name</h2>
+    <p>Matias Fernandez</p>
+    
+    <h2>Major</h2>
+    <p>Ingenieria Civil Industrial</p>
+    
+    <h2>Year of University Enrollment</h2>
+    <p>Año 2019</p>
+    
+    <h2>Link to your Github</h2>
+    <p><a href="https://github.com/Mfergo29" target="_blank">Tu Github</a></p>
+    
+    <h2>Personal Summary</h2>
+    <p>Resumen</p>
+    
+    <h2>Skills</h2>
+    <table border="1">
+        <tr>
+            <th>Skill</th>
+            <th>Level</th>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>Experto</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>Basico</td>
+        </tr>
+        <tr>
+            <td>HTML/CSS</td>
+            <td>Basico</td>
+        </tr>
+        <tr>
+            <td>Git</td>
+            <td>Basico</td>
+        </tr>
+        <tr>
+            <td>Excel</td>
+            <td>Experto</td>
+        </tr>
+        <tr>
+            <td>SQL</td>
+            <td>Medio</td>
+        </tr>
+        <tr>
+            <td>Ruby</td>
+            <td>Sin Conocimiento</td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td>C1</td>
+        </tr>
+        <tr>
+            <td>Spanish</td>
+            <td>Nativo</td>
+        </tr>
+    </table>
+
+    <div class="button-container">
+        <input type="text" id="inputField" placeholder="Enter text">
+        <button onclick="changeSection()">Change Section</button>
+    </div>
+
+    <div class="highlight-section" id="highlightSection">
+        This section will change based on the input value.
+    </div>
+
+    <script>
+        function changeSection() {
+            var inputValue = document.getElementById("inputField").value;
+            document.getElementById("highlightSection").innerHTML = inputValue;
+        }
+    </script>
+</body>
+</html>
