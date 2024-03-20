@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+}
+
+
+#titulo {
+    color: yellow;
+}
+
+#skills{
+    text-align: center;
+    color: #a0873b;
+}
+
+#skill{
+    color: #6083a5;
+}
+
+#level{
+    color: #6083a5;
+}
+
+p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffc107;
+
+}
+
+.titulos{
+    font-size: 18px;
+    font-weight: bold;
+    color: yellow;
+    border: 1px solid #ddd;
+    background-color: #6083a5;
+}
+
+.github{
+
+    list-style-type: none;
+    text-decoration: none; 
+    color: #ffc107;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 25%;
+    margin-top: 20px;
+}
+
+
+td {
+    text-align: center;
+    background-color: #6083a5;
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ffc107;
+}
+
+
+.button-container {
+    margin-top: 20px;
+}
+.cambiar-texto{
+    font: bold;
+}
+
+.destacarCampo {
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+
+}

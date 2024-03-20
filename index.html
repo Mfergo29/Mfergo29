@@ -1,120 +1,117 @@
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matias Fernandez</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            color: #333;
-            background-color: #f0f0f0;
-            padding: 20px;
-        }
-
-        h1, h2 {
-            color: #00ff88;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 25%;
-            margin-top: 20px;
-        }
-
-        th, td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-        .button-container {
-            margin-top: 20px;
-        }
-
-        .highlight-section {
-            background-color: #ffc107;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>Matias Fernandez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
-    <h1>Resume</h1>
-    
-    <h2>Name</h2>
-    <p>Matias Fernandez</p>
-    
-    <h2>Major</h2>
-    <p>Ingenieria Civil Industrial</p>
-    
-    <h2>Year of University Enrollment</h2>
-    <p>Año 2019</p>
-    
-    <h2>Link to your Github</h2>
-    <p><a href="https://github.com/Mfergo29" target="_blank">Tu Github</a></p>
-    
-    <h2>Personal Summary</h2>
-    <p>Resumen</p>
-    
-    <h2>Skills</h2>
-    <table border="1">
-        <tr>
-            <th>Skill</th>
-            <th>Level</th>
-        </tr>
-        <tr>
-            <td>Python</td>
-            <td>Avanzado</td>
-        </tr>
-        <tr>
-            <td>JavaScript</td>
-            <td>Basico</td>
-        </tr>
-        <tr>
-            <td>HTML/CSS</td>
-            <td>Basico</td>
-        </tr>
-        <tr>
-            <td>Git</td>
-            <td>Basico</td>
-        </tr>
-        <tr>
-            <td>Excel</td>
-            <td>Experto</td>
-        </tr>
-        <tr>
-            <td>SQL</td>
-            <td>Medio</td>
-        </tr>
-        <tr>
-            <td>Ruby</td>
-            <td>Sin Conocimiento</td>
-        </tr>
-        <tr>
-            <td>English</td>
-            <td>C1</td>
-        </tr>
-        <tr>
-            <td>Spanish</td>
-            <td>Nativo</td>
-        </tr>
-    </table>
 
-    <div class="button-container">
-        <input type="text" id="inputField" placeholder="Enter text">
-        <button onclick="changeSection()">Cambiar texto</button>
+<body class="bg-secondary">
+    <div class="container-lg text-center p-3">
+        <div class="row">
+            <div class="col-md">
+                <h1 id="titulo" class="mb-4">Resume</h1>
+            <h2 id="titulo">Name</h2>
+            <p>Matias Fernandez</p>
+    
+            <h2 id="titulo">Major</h2>
+            <p>Ingenieria Civil Industrial</p>
+    
+            <h2 id="titulo">Year of University Enrollment</h2>
+            <p>Año 2019</p>
+    
+            <h2 id="titulo">Link to your Github</h2>
+            <p><a class="github" href="https://github.com/Mfergo29" target="_blank">GitHub</a></p>
+    
+            <h2 id="titulo">Personal Summary</h2>
+            <p>Resumen</p>
+    
+            <h2 id="titulo">Skills</h2>
+            <div class="rounded">
+                <table class="table table-bordered text-center table-success">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th id="skill" scope="col">Skill</th>
+                            <th id="level" scope="col">Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="skills">Python</td>
+                            <td id="skills">Avanzado</td>
+                        </tr>
+                        <tr>
+                            <td id="skills">JavaScript</td>
+                            <td id="skills">Básico</td>
+                        </tr>
+                        <tr>
+                            <td id="skills">HTML/CSS</td>
+                            <td id="skills">Básico</td>
+                        </tr>
+                        <tr>
+                            <td id="skills">Git</td>
+                            <td id="skills">Básico</td>
+                        </tr>
+                        <tr>
+                            <td id="skills">Excel</td>
+                            <td id="skills">Experto</td>
+                        </tr>
+                        <tr>
+                            <td id="skills">SQL</td>
+                            <td id="skills">Medio</td>
+                        </tr>
+                        <tr>
+                            <td id="skills">Ruby</td>
+                            <td id="skills">Sin Conocimiento</td>
+                        </tr>
+                        <tr>
+                            <td id="skills">English</td>
+                            <td id="skills">C1</td>
+                        </tr>
+                        <tr>
+                            <td id="skills">Spanish</td>
+                            <td id="skills">Nativo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            
+
+
+            </div>
+
+        </div>
+       
+
+        <div class="button-container">
+            <div class="d-flex justify-content-center">
+                <input type="text" id="inputField" class="form-control m-2" placeholder="Ingrese texto" style="max-width: 18rem;">
+                <button type="button" class="btn btn-danger cambiar-texto" onclick="cambiarTexto()">Cambiar texto</button>
+            </div>
+           
+            
+        </div>
+
+        <div class="card text-bg-warning mb-3 cart m-3">
+            <div class="card-body text-center">
+                <div class="highlight-section" id="destacarCampo">
+                    
+                </div>
+            </div>
+        </div>
+
     </div>
-
-    <div class="highlight-section" id="highlightSection">
-        Inserte texto.
-    </div>
-
+    
     <script>
-        function changeSection() {
+        function cambiarTexto() {
             var inputValue = document.getElementById("inputField").value;
-            document.getElementById("highlightSection").innerHTML = inputValue;
+            document.getElementById("destacarCampo").innerHTML = inputValue;
         }
     </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+
 </html>
